@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Do The Work">
+<meta name="theme-color" content="#0a0a0a">
+<title>Do The Work</title>
+
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0a0a0a;
+  --surface: #141414;
+  --surface-2: #1c1c1c;
+  --surface-3: #242424;
+  --border: #2a2a2a;
+  --text: #e8e8e8;
+  --text-dim: #707070;
+  --text-mid: #999;
+  --accent: #ff4d00;
+  --accent-glow: rgba(255, 77, 0, 0.15);
+  --green: #00c853;
+  --green-dim: rgba(0, 200, 83, 0.15);
+  --yellow: #ffc107;
+  --yellow-dim: rgba(255, 193, 7, 0.15);
+  --red: #ff3d00;
+  --red-dim: rgba(255, 61, 0, 0.12);
+  --radius: 14px;
+  --radius-sm: 10px;
+  --safe-top: env(safe-area-inset-top, 20px);
+  --safe-bottom: env(safe-area-inset-bottom, 20px);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+html, body {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Sans', -apple-system, sans-serif;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  padding-top: var(--safe-top);
+  padding-bottom: var(--safe-bottom);
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── HEADER ── */
+.header {
+  padding: 12px 20px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.header-left h1 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: var(--text);
+}
+
+.header-left .date {
+  font-size: 12px;
+  color: var(--text-dim);
+  font-family: 'JetBrains Mono', monospace;
+  margin-top: 2px;
+}
+
+.daily-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 6px 14px;
+  min-width: 64px;
+}
+
+.daily-score .score-val {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.daily-score .score-label {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-dim);
+  margin-top: 2px;
+}
+
+/* ── NAV TABS ── */
+.nav-tabs {
+  display: flex;
+  gap: 4px;
+  padding: 8px 20px 12px;
+  flex-shrink: 0;
+}
+
+.nav-tab {
+  flex: 1;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px 8px;
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: all 0.2s;
+  letter-spacing: 0.3px;
+}
+
+.nav-tab.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(255, 77, 0, 0.3);
+}
+
+.nav-tab:not(.active):active {
+  background: var(--surface-2);
+}
+
+/* ── MAIN CONTENT ── */
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0 20px 20px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+/* ── SECTION HEADERS ── */
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  margin-top: 4px;
+}
+
+.section-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-dim);
+}
+
+.section-action {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--accent);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 20px;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  line-height: 1;
+  transition: all 0.15s;
+}
+
+.section-action:active {
+  background: var(--accent);
+  color: #fff;
+  transform: scale(0.92);
+}
+
+/* ── TASK CARDS ── */
+.task-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  transition: all 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.task-card.completed {
+  opacity: 0.45;
+  border-color: var(--green);
+}
+
+.task-card.completed .task-text {
+  text-decoration: line-through;
+  color: var(--text-dim);
+}
+
+.task-check {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 1px;
+}
+
+.task-card:nth-child(1) .task-check { border-color: var(--accent); }
+.task-card:nth-child(2) .task-check { border-color: var(--yellow); }
+.task-card:nth-child(3) .task-check { border-color: var(--text-dim); }
+
+.task-card.completed .task-check {
+  background: var(--green);
+  border-color: var(--green);
+}
+
+.task-card.completed .task-check::after {
+  content: '✓';
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.task-body { flex: 1; min-width: 0; }
+
+.task-priority {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-bottom: 4px;
+}
+
+.task-card:nth-child(1) .task-priority { color: var(--accent); }
+.task-card:nth-child(2) .task-priority { color: var(--yellow); }
+.task-card:nth-child(3) .task-priority { color: var(--text-dim); }
+
+.task-text {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--text);
+  word-break: break-word;
+}
+
+.task-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.task-pomodoros {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--text-dim);
+}
+
+.task-focus-btn {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--accent);
+  background: var(--accent-glow);
+  border: 1px solid rgba(255, 77, 0, 0.25);
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.task-focus-btn:active {
+  background: var(--accent);
+  color: #fff;
+}
+
+.task-delete {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px 8px;
+  opacity: 0.4;
+  transition: opacity 0.15s;
+}
+
+.task-delete:active { opacity: 1; color: var(--red); }
+
+/* Empty state */
+.empty-state {
+  text-align: center;
+  padding: 48px 20px;
+  color: var(--text-dim);
+}
+
+.empty-state .empty-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  opacity: 0.3;
+}
+
+.empty-state p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.empty-state .cta {
+  margin-top: 16px;
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 12px 24px;
+  border-radius: var(--radius-sm);
+  border: none;
+  cursor: pointer;
+}
+
+/* ── FOCUS TIMER ── */
+.timer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.timer-task-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  text-align: center;
+  max-width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.timer-ring {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  margin: 16px 0;
+}
+
+.timer-ring svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.timer-ring .ring-bg {
+  fill: none;
+  stroke: var(--surface-2);
+  stroke-width: 6;
+}
+
+.timer-ring .ring-progress {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-dasharray: 691.15;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 1s linear;
+  filter: drop-shadow(0 0 8px rgba(255, 77, 0, 0.4));
+}
+
+.timer-ring.break .ring-progress {
+  stroke: var(--green);
+  filter: drop-shadow(0 0 8px rgba(0, 200, 83, 0.4));
+}
+
+.timer-display {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.timer-time {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 52px;
+  font-weight: 800;
+  letter-spacing: -2px;
+  color: var(--text);
+  line-height: 1;
+}
+
+.timer-phase {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-dim);
+  margin-top: 6px;
+}
+
+.timer-controls {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.timer-btn {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 14px 32px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.timer-btn.primary {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(255, 77, 0, 0.3);
+}
+
+.timer-btn.primary:active { transform: scale(0.95); }
+
+.timer-btn.secondary {
+  background: var(--surface-2);
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+}
+
+.timer-settings {
+  display: flex;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.timer-preset {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.timer-preset.active {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-glow);
+}
+
+.timer-stats {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+  padding: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  width: 100%;
+}
+
+.timer-stat {
+  flex: 1;
+  text-align: center;
+}
+
+.timer-stat-val {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.timer-stat-label {
+  font-size: 10px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-top: 2px;
+}
+
+/* ── HABITS ── */
+.habit-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: all 0.15s;
+  position: relative;
+}
+
+.habit-check {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  border: 2px solid var(--border);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.habit-card.done .habit-check {
+  background: var(--green);
+  border-color: var(--green);
+}
+
+.habit-card.done .habit-check::after {
+  content: '✓';
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.habit-body { flex: 1; }
+
+.habit-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.habit-card.done .habit-name {
+  color: var(--text-dim);
+}
+
+.habit-streak {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--text-dim);
+  margin-top: 2px;
+}
+
+.habit-streak span {
+  color: var(--yellow);
+  font-weight: 700;
+}
+
+.habit-week {
+  display: flex;
+  gap: 3px;
+  flex-shrink: 0;
+}
+
+.habit-day-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--surface-3);
+}
+
+.habit-day-dot.done { background: var(--green); }
+.habit-day-dot.today { border: 1px solid var(--accent); }
+
+.habit-delete {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px 6px;
+  opacity: 0.3;
+}
+
+.habit-delete:active { opacity: 1; color: var(--red); }
+
+/* ── MODALS ── */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 100;
+  align-items: flex-end;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+}
+
+.modal-overlay.show { display: flex; }
+
+.modal {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px 20px 0 0;
+  padding: 24px 20px;
+  width: 100%;
+  max-width: 500px;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding-bottom: calc(24px + var(--safe-bottom));
+  animation: slideUp 0.25s ease-out;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+.modal-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.modal-input {
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  color: var(--text);
+  outline: none;
+  margin-bottom: 12px;
+  transition: border-color 0.2s;
+}
+
+.modal-input:focus { border-color: var(--accent); }
+.modal-input::placeholder { color: var(--text-dim); }
+
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.modal-btn {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.modal-btn.cancel {
+  background: var(--surface-2);
+  color: var(--text-dim);
+}
+
+.modal-btn.confirm {
+  background: var(--accent);
+  color: #fff;
+}
+
+.modal-btn:active { transform: scale(0.96); }
+
+/* ── DAILY REVIEW ── */
+.review-section {
+  padding: 8px 0;
+}
+
+.review-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 12px;
+}
+
+.review-card h3 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-dim);
+  margin-bottom: 12px;
+}
+
+.review-metric {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.review-metric:last-child { border-bottom: none; }
+
+.review-metric .label { font-size: 14px; color: var(--text-mid); }
+
+.review-metric .value {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.review-bar {
+  height: 6px;
+  background: var(--surface-3);
+  border-radius: 3px;
+  margin-top: 12px;
+  overflow: hidden;
+}
+
+.review-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  background: var(--accent);
+  transition: width 0.5s ease;
+}
+
+.streak-number {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--accent);
+  text-align: center;
+  line-height: 1;
+  margin: 8px 0;
+}
+
+.streak-label {
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+.reset-btn {
+  display: block;
+  margin: 24px auto 0;
+  background: var(--red-dim);
+  border: 1px solid rgba(255, 61, 0, 0.2);
+  color: var(--red);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+/* ── QUOTE ── */
+.daily-quote {
+  background: var(--surface);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+}
+
+.daily-quote p {
+  font-size: 13px;
+  font-style: italic;
+  color: var(--text-mid);
+  line-height: 1.5;
+}
+
+.daily-quote .author {
+  font-style: normal;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--text-dim);
+  margin-top: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+</style>
+<script>
+// Inline PWA manifest
+const manifestData = '{\n  "name": "Do The Work",\n  "short_name": "Doit",\n  "description": "Daily execution engine. 3 tasks. Focus timer. Habits. No excuses.",\n  "start_url": "index.html",\n  "display": "standalone",\n  "background_color": "#0a0a0a",\n  "theme_color": "#0a0a0a",\n  "orientation": "portrait",\n  "icons": [\n    { "src": "data:image/png;base64,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", "sizes": "192x192", "type": "image/png" },\n    { "src": "data:image/png;base64,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", "sizes": "512x512", "type": "image/png" }\n  ]\n}';
+const blob = new Blob([manifestData], {type: 'application/json'});
+const manifestURL = URL.createObjectURL(blob);
+const link = document.createElement('link');
+link.rel = 'manifest';
+link.href = manifestURL;
+document.head.appendChild(link);
+</script>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-left">
+    <h1>DO THE WORK</h1>
+    <div class="date" id="headerDate"></div>
+  </div>
+  <div class="daily-score" id="dailyScore">
+    <span class="score-val" id="scoreVal">0</span>
+    <span class="score-label">Score</span>
+  </div>
+</div>
+
+<!-- NAV -->
+<div class="nav-tabs">
+  <div class="nav-tab active" data-tab="tasks">TOP 3</div>
+  <div class="nav-tab" data-tab="focus">FOCUS</div>
+  <div class="nav-tab" data-tab="habits">HABITS</div>
+  <div class="nav-tab" data-tab="review">REVIEW</div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main-content">
+
+  <!-- TOP 3 TASKS -->
+  <div class="tab-panel active" id="tab-tasks">
+    <div class="daily-quote" id="dailyQuote"></div>
+    <div class="section-header">
+      <span class="section-title">Today's Non-Negotiables</span>
+      <button class="section-action" id="addTaskBtn">+</button>
+    </div>
+    <div id="taskList"></div>
+  </div>
+
+  <!-- FOCUS TIMER -->
+  <div class="tab-panel" id="tab-focus">
+    <div class="timer-container">
+      <div class="timer-task-name" id="timerTaskName">No task selected</div>
+      <div class="timer-ring" id="timerRing">
+        <svg viewBox="0 0 240 240">
+          <circle class="ring-bg" cx="120" cy="120" r="110"/>
+          <circle class="ring-progress" id="timerProgress" cx="120" cy="120" r="110"/>
+        </svg>
+        <div class="timer-display">
+          <div class="timer-time" id="timerTime">25:00</div>
+          <div class="timer-phase" id="timerPhase">Ready</div>
+        </div>
+      </div>
+      <div class="timer-controls">
+        <button class="timer-btn secondary" id="timerReset">Reset</button>
+        <button class="timer-btn primary" id="timerToggle">Start</button>
+      </div>
+      <div class="timer-settings">
+        <button class="timer-preset active" data-minutes="25">25m</button>
+        <button class="timer-preset" data-minutes="35">35m</button>
+        <button class="timer-preset" data-minutes="50">50m</button>
+      </div>
+      <div class="timer-stats">
+        <div class="timer-stat">
+          <div class="timer-stat-val" id="statPomodoros">0</div>
+          <div class="timer-stat-label">Sessions</div>
+        </div>
+        <div class="timer-stat">
+          <div class="timer-stat-val" id="statMinutes">0</div>
+          <div class="timer-stat-label">Minutes</div>
+        </div>
+        <div class="timer-stat">
+          <div class="timer-stat-val" id="statStreak">0</div>
+          <div class="timer-stat-label">Day Streak</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HABITS -->
+  <div class="tab-panel" id="tab-habits">
+    <div class="section-header">
+      <span class="section-title">Daily Habits</span>
+      <button class="section-action" id="addHabitBtn">+</button>
+    </div>
+    <div id="habitList"></div>
+  </div>
+
+  <!-- REVIEW -->
+  <div class="tab-panel" id="tab-review">
+    <div class="review-section">
+      <div class="review-card">
+        <h3>Today's Progress</h3>
+        <div class="review-metric">
+          <span class="label">Tasks Completed</span>
+          <span class="value" id="revTasks" style="color: var(--accent)">0/0</span>
+        </div>
+        <div class="review-metric">
+          <span class="label">Habits Done</span>
+          <span class="value" id="revHabits" style="color: var(--green)">0/0</span>
+        </div>
+        <div class="review-metric">
+          <span class="label">Focus Time</span>
+          <span class="value" id="revFocus" style="color: var(--yellow)">0 min</span>
+        </div>
+        <div class="review-bar"><div class="review-bar-fill" id="revBar"></div></div>
+      </div>
+      <div class="review-card">
+        <h3>Consistency Streak</h3>
+        <div class="streak-number" id="revStreak">0</div>
+        <div class="streak-label">consecutive days with score ≥ 60</div>
+      </div>
+      <div class="review-card">
+        <h3>This Week</h3>
+        <div id="weekHistory"></div>
+      </div>
+      <button class="reset-btn" id="resetDay">Reset Today's Data</button>
+    </div>
+  </div>
+
+</div>
+
+<!-- MODALS -->
+<div class="modal-overlay" id="taskModal">
+  <div class="modal">
+    <div class="modal-title">Add Task</div>
+    <input class="modal-input" id="taskInput" type="text" placeholder="What must get done today?" maxlength="120" enterkeyhint="done">
+    <div class="modal-actions">
+      <button class="modal-btn cancel" id="taskCancel">Cancel</button>
+      <button class="modal-btn confirm" id="taskConfirm">Add</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="habitModal">
+  <div class="modal">
+    <div class="modal-title">Add Habit</div>
+    <input class="modal-input" id="habitInput" type="text" placeholder="e.g. Exercise 30 min" maxlength="80" enterkeyhint="done">
+    <div class="modal-actions">
+      <button class="modal-btn cancel" id="habitCancel">Cancel</button>
+      <button class="modal-btn confirm" id="habitConfirm">Add</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ─── DATA LAYER ───
+const TODAY = () => new Date().toISOString().slice(0, 10);
+const STORAGE_KEY = 'dtw_data';
+
+const QUOTES = [
+  { text: "The way to get started is to quit talking and begin doing.", author: "Walt Disney" },
+  { text: "Action is the foundational key to all success.", author: "Pablo Picasso" },
+  { text: "Do the hard jobs first. The easy jobs will take care of themselves.", author: "Dale Carnegie" },
+  { text: "You don't have to be great to start, but you have to start to be great.", author: "Zig Ziglar" },
+  { text: "The secret of getting ahead is getting started.", author: "Mark Twain" },
+  { text: "Discipline is choosing between what you want now and what you want most.", author: "Abraham Lincoln" },
+  { text: "Small daily improvements over time lead to stunning results.", author: "Robin Sharma" },
+  { text: "It is not enough to be busy. The question is: what are we busy about?", author: "Thoreau" },
+  { text: "Focus on being productive instead of busy.", author: "Tim Ferriss" },
+  { text: "The only way to do great work is to love what you do.", author: "Steve Jobs" },
+  { text: "Procrastination is the thief of time.", author: "Charles Dickens" },
+  { text: "What you do today can improve all your tomorrows.", author: "Ralph Marston" },
+  { text: "Stop overthinking. Just do.", author: "Anonymous" },
+  { text: "Motivation gets you going. Habit keeps you growing.", author: "John Maxwell" },
+];
+
+function loadData() {
+  try {
+    return JSON.parse(localStorage.getItem(STORAGE_KEY)) || getDefault();
+  } catch { return getDefault(); }
+}
+
+function getDefault() {
+  return {
+    tasks: {},      // { "2025-02-15": [{id, text, completed, pomodoros}] }
+    habits: [],     // [{id, name, history: {"2025-02-15": true}}]
+    timer: {},      // { "2025-02-15": {sessions: 0, minutes: 0} }
+    streak: 0,
+    history: {},    // { "2025-02-15": {score, tasks, habits, focus} }
+    lastDate: null
+  };
+}
+
+function save(data) {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+}
+
+// ─── DAY MANAGEMENT ───
+let data = loadData();
+
+function checkNewDay() {
+  const today = TODAY();
+  if (data.lastDate && data.lastDate !== today) {
+    // Calculate yesterday's score and update streak
+    const yScore = calcScore(data.lastDate);
+    data.history[data.lastDate] = {
+      score: yScore,
+      tasks: (data.tasks[data.lastDate] || []).filter(t => t.completed).length + '/' + (data.tasks[data.lastDate] || []).length,
+      habits: data.habits.filter(h => h.history[data.lastDate]).length + '/' + data.habits.length,
+      focus: (data.timer[data.lastDate] || {}).minutes || 0
+    };
+    if (yScore >= 60) {
+      data.streak = (data.streak || 0) + 1;
+    } else {
+      data.streak = 0;
+    }
+  }
+  data.lastDate = today;
+  if (!data.tasks[today]) data.tasks[today] = [];
+  if (!data.timer[today]) data.timer[today] = { sessions: 0, minutes: 0 };
+  save(data);
+}
+
+function calcScore(date) {
+  const tasks = data.tasks[date] || [];
+  const totalTasks = tasks.length || 1;
+  const doneT = tasks.filter(t => t.completed).length;
+  const totalHabits = data.habits.length || 1;
+  const doneH = data.habits.filter(h => h.history[date]).length;
+  const focusMin = (data.timer[date] || {}).minutes || 0;
+
+  const taskScore = (doneT / totalTasks) * 40;
+  const habitScore = (doneH / totalHabits) * 35;
+  const focusScore = Math.min(focusMin / 120, 1) * 25; // 120 min = max
+  return Math.round(taskScore + habitScore + focusScore);
+}
+
+checkNewDay();
+
+// ─── RENDER ───
+function renderDate() {
+  const d = new Date();
+  const opts = { weekday: 'short', month: 'short', day: 'numeric' };
+  document.getElementById('headerDate').textContent = d.toLocaleDateString('en-US', opts).toUpperCase();
+}
+
+function renderScore() {
+  document.getElementById('scoreVal').textContent = calcScore(TODAY());
+}
+
+function renderQuote() {
+  const idx = Math.floor(new Date().getTime() / 86400000) % QUOTES.length;
+  const q = QUOTES[idx];
+  document.getElementById('dailyQuote').innerHTML = `<p>"${q.text}"</p><div class="author">— ${q.author}</div>`;
+}
+
+function renderTasks() {
+  const today = TODAY();
+  const tasks = data.tasks[today] || [];
+  const list = document.getElementById('taskList');
+
+  if (tasks.length === 0) {
+    list.innerHTML = `
+      <div class="empty-state">
+        <div class="empty-icon">◎</div>
+        <p>No tasks yet.<br>Pick your 3 most important tasks for today.</p>
+        <button class="cta" onclick="openModal('task')">Add First Task</button>
+      </div>`;
+    return;
+  }
+
+  const labels = ['#1 Priority', '#2 Important', '#3 Do It'];
+  list.innerHTML = tasks.map((t, i) => `
+    <div class="task-card ${t.completed ? 'completed' : ''}" data-id="${t.id}">
+      <div class="task-check" onclick="toggleTask('${t.id}')"></div>
+      <div class="task-body">
+        <div class="task-priority">${labels[i] || 'Task'}</div>
+        <div class="task-text">${esc(t.text)}</div>
+        <div class="task-meta">
+          <span class="task-pomodoros">🍅 ${t.pomodoros || 0}</span>
+          ${!t.completed ? `<button class="task-focus-btn" onclick="focusOn('${t.id}')">Focus →</button>` : ''}
+        </div>
+      </div>
+      <button class="task-delete" onclick="deleteTask('${t.id}')">✕</button>
+    </div>
+  `).join('');
+}
+
+function renderHabits() {
+  const today = TODAY();
+  const list = document.getElementById('habitList');
+
+  if (data.habits.length === 0) {
+    list.innerHTML = `
+      <div class="empty-state">
+        <div class="empty-icon">⟳</div>
+        <p>No habits tracked yet.<br>Add daily habits you want to build.</p>
+        <button class="cta" onclick="openModal('habit')">Add First Habit</button>
+      </div>`;
+    return;
+  }
+
+  list.innerHTML = data.habits.map(h => {
+    const done = h.history[today] || false;
+    const streak = calcHabitStreak(h);
+    const week = getLast7Days(h);
+    return `
+      <div class="habit-card ${done ? 'done' : ''}" data-id="${h.id}">
+        <div class="habit-check" onclick="toggleHabit('${h.id}')"></div>
+        <div class="habit-body">
+          <div class="habit-name">${esc(h.name)}</div>
+          <div class="habit-streak">Streak: <span>${streak}d</span></div>
+        </div>
+        <div class="habit-week">
+          ${week.map(d => `<div class="habit-day-dot ${d.done ? 'done' : ''} ${d.today ? 'today' : ''}"></div>`).join('')}
+        </div>
+        <button class="habit-delete" onclick="deleteHabit('${h.id}')">✕</button>
+      </div>
+    `;
+  }).join('');
+}
+
+function renderTimer() {
+  const today = TODAY();
+  const t = data.timer[today] || { sessions: 0, minutes: 0 };
+  document.getElementById('statPomodoros').textContent = t.sessions;
+  document.getElementById('statMinutes').textContent = t.minutes;
+  document.getElementById('statStreak').textContent = data.streak || 0;
+}
+
+function renderReview() {
+  const today = TODAY();
+  const tasks = data.tasks[today] || [];
+  const doneT = tasks.filter(t => t.completed).length;
+  const doneH = data.habits.filter(h => h.history[today]).length;
+  const focus = (data.timer[today] || {}).minutes || 0;
+  const score = calcScore(today);
+
+  document.getElementById('revTasks').textContent = `${doneT}/${tasks.length}`;
+  document.getElementById('revHabits').textContent = `${doneH}/${data.habits.length}`;
+  document.getElementById('revFocus').textContent = `${focus} min`;
+  document.getElementById('revBar').style.width = `${score}%`;
+  document.getElementById('revStreak').textContent = data.streak || 0;
+
+  // Week history
+  const weekEl = document.getElementById('weekHistory');
+  const days = [];
+  for (let i = 6; i >= 0; i--) {
+    const d = new Date(); d.setDate(d.getDate() - i);
+    const key = d.toISOString().slice(0, 10);
+    const h = data.history[key];
+    const dayName = d.toLocaleDateString('en-US', { weekday: 'short' });
+    days.push({ dayName, score: h ? h.score : (key === today ? score : '—'), isToday: key === today });
+  }
+  weekEl.innerHTML = days.map(d => `
+    <div class="review-metric">
+      <span class="label">${d.dayName} ${d.isToday ? '(today)' : ''}</span>
+      <span class="value" style="color: ${typeof d.score === 'number' ? (d.score >= 60 ? 'var(--green)' : d.score >= 30 ? 'var(--yellow)' : 'var(--red)') : 'var(--text-dim)'}">${d.score}${typeof d.score === 'number' ? '%' : ''}</span>
+    </div>
+  `).join('');
+}
+
+// ─── HELPERS ───
+function esc(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+
+function uuid() { return Date.now().toString(36) + Math.random().toString(36).slice(2, 7); }
+
+function calcHabitStreak(habit) {
+  let streak = 0;
+  const d = new Date();
+  // Check today first
+  const today = TODAY();
+  if (!habit.history[today]) {
+    // Don't count today against streak, check from yesterday
+    d.setDate(d.getDate() - 1);
+  }
+  for (let i = 0; i < 365; i++) {
+    const key = d.toISOString().slice(0, 10);
+    if (habit.history[key]) { streak++; d.setDate(d.getDate() - 1); }
+    else break;
+  }
+  // Add today if done
+  if (habit.history[today]) streak = Math.max(streak, streak);
+  return streak;
+}
+
+function getLast7Days(habit) {
+  const days = [];
+  const today = TODAY();
+  for (let i = 6; i >= 0; i--) {
+    const d = new Date(); d.setDate(d.getDate() - i);
+    const key = d.toISOString().slice(0, 10);
+    days.push({ done: habit.history[key] || false, today: key === today });
+  }
+  return days;
+}
+
+// ─── TASK ACTIONS ───
+function toggleTask(id) {
+  const tasks = data.tasks[TODAY()];
+  const t = tasks.find(x => x.id === id);
+  if (t) { t.completed = !t.completed; save(data); renderTasks(); renderScore(); renderReview(); }
+}
+
+function deleteTask(id) {
+  data.tasks[TODAY()] = data.tasks[TODAY()].filter(t => t.id !== id);
+  save(data); renderTasks(); renderScore(); renderReview();
+}
+
+function addTask(text) {
+  const today = TODAY();
+  if ((data.tasks[today] || []).length >= 3) return alert("Only 3 tasks. That's the rule. Finish one first.");
+  data.tasks[today].push({ id: uuid(), text: text.trim(), completed: false, pomodoros: 0 });
+  save(data); renderTasks(); renderScore();
+}
+
+// ─── HABIT ACTIONS ───
+function toggleHabit(id) {
+  const h = data.habits.find(x => x.id === id);
+  if (h) {
+    const today = TODAY();
+    h.history[today] = !h.history[today];
+    save(data); renderHabits(); renderScore(); renderReview();
+  }
+}
+
+function deleteHabit(id) {
+  if (!confirm('Delete this habit? Streak will be lost.')) return;
+  data.habits = data.habits.filter(h => h.id !== id);
+  save(data); renderHabits(); renderScore(); renderReview();
+}
+
+function addHabit(name) {
+  if (data.habits.length >= 8) return alert("Keep it under 8 habits. Quality over quantity.");
+  data.habits.push({ id: uuid(), name: name.trim(), history: {} });
+  save(data); renderHabits();
+}
+
+// ─── FOCUS TIMER ───
+let timerState = {
+  running: false,
+  seconds: 25 * 60,
+  total: 25 * 60,
+  interval: null,
+  taskId: null,
+  isBreak: false,
+  breakSeconds: 5 * 60
+};
+
+function focusOn(taskId) {
+  const task = (data.tasks[TODAY()] || []).find(t => t.id === taskId);
+  if (task) {
+    timerState.taskId = taskId;
+    document.getElementById('timerTaskName').textContent = task.text;
+    // Switch to focus tab
+    switchTab('focus');
+  }
+}
+
+function updateTimerDisplay() {
+  const min = Math.floor(timerState.seconds / 60);
+  const sec = timerState.seconds % 60;
+  document.getElementById('timerTime').textContent = `${min.toString().padStart(2, '0')}:${sec.toString().padStart(2, '0')}`;
+
+  // Progress ring
+  const circumference = 2 * Math.PI * 110; // r=110
+  const total = timerState.isBreak ? timerState.breakSeconds : timerState.total;
+  const progress = timerState.seconds / total;
+  const offset = circumference * (1 - progress);
+  document.getElementById('timerProgress').style.strokeDashoffset = offset;
+
+  // Phase label
+  const phaseEl = document.getElementById('timerPhase');
+  if (timerState.isBreak) { phaseEl.textContent = 'Break'; }
+  else if (timerState.running) { phaseEl.textContent = 'Focus'; }
+  else { phaseEl.textContent = 'Ready'; }
+
+  // Ring style
+  const ring = document.getElementById('timerRing');
+  ring.classList.toggle('break', timerState.isBreak);
+}
+
+function startTimer() {
+  if (timerState.running) return;
+  timerState.running = true;
+  document.getElementById('timerToggle').textContent = 'Pause';
+  timerState.interval = setInterval(() => {
+    timerState.seconds--;
+    if (timerState.seconds <= 0) {
+      clearInterval(timerState.interval);
+      timerState.running = false;
+
+      if (!timerState.isBreak) {
+        // Session complete
+        const today = TODAY();
+        data.timer[today].sessions++;
+        data.timer[today].minutes += Math.round(timerState.total / 60);
+
+        // Add pomodoro to task
+        if (timerState.taskId) {
+          const task = (data.tasks[today] || []).find(t => t.id === timerState.taskId);
+          if (task) task.pomodoros = (task.pomodoros || 0) + 1;
+        }
+
+        save(data); renderTimer(); renderTasks(); renderScore(); renderReview();
+
+        // Vibrate & Start break
+        if (navigator.vibrate) navigator.vibrate([200, 100, 200]);
+        timerState.isBreak = true;
+        timerState.seconds = timerState.breakSeconds;
+        document.getElementById('timerToggle').textContent = 'Break';
+        updateTimerDisplay();
+        setTimeout(() => startTimer(), 500);
+      } else {
+        // Break complete
+        if (navigator.vibrate) navigator.vibrate([100, 50, 100, 50, 100]);
+        timerState.isBreak = false;
+        timerState.seconds = timerState.total;
+        document.getElementById('timerToggle').textContent = 'Start';
+        updateTimerDisplay();
+      }
+    }
+    updateTimerDisplay();
+  }, 1000);
+}
+
+function pauseTimer() {
+  clearInterval(timerState.interval);
+  timerState.running = false;
+  document.getElementById('timerToggle').textContent = 'Resume';
+}
+
+function resetTimer() {
+  clearInterval(timerState.interval);
+  timerState.running = false;
+  timerState.isBreak = false;
+  timerState.seconds = timerState.total;
+  document.getElementById('timerToggle').textContent = 'Start';
+  updateTimerDisplay();
+}
+
+// ─── MODAL ───
+function openModal(type) {
+  if (type === 'task') {
+    if ((data.tasks[TODAY()] || []).length >= 3) {
+      alert("3 tasks max. Finish one first."); return;
+    }
+    document.getElementById('taskModal').classList.add('show');
+    setTimeout(() => document.getElementById('taskInput').focus(), 100);
+  } else {
+    document.getElementById('habitModal').classList.add('show');
+    setTimeout(() => document.getElementById('habitInput').focus(), 100);
+  }
+}
+
+function closeModal(type) {
+  if (type === 'task') {
+    document.getElementById('taskModal').classList.remove('show');
+    document.getElementById('taskInput').value = '';
+  } else {
+    document.getElementById('habitModal').classList.remove('show');
+    document.getElementById('habitInput').value = '';
+  }
+}
+
+// ─── TAB SWITCHING ───
+function switchTab(tab) {
+  document.querySelectorAll('.nav-tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.toggle('active', p.id === `tab-${tab}`));
+  if (tab === 'review') renderReview();
+}
+
+// ─── EVENT LISTENERS ───
+document.querySelectorAll('.nav-tab').forEach(tab => {
+  tab.addEventListener('click', () => switchTab(tab.dataset.tab));
+});
+
+document.getElementById('addTaskBtn').addEventListener('click', () => openModal('task'));
+document.getElementById('addHabitBtn').addEventListener('click', () => openModal('habit'));
+
+document.getElementById('taskCancel').addEventListener('click', () => closeModal('task'));
+document.getElementById('habitCancel').addEventListener('click', () => closeModal('habit'));
+
+document.getElementById('taskConfirm').addEventListener('click', () => {
+  const v = document.getElementById('taskInput').value.trim();
+  if (v) { addTask(v); closeModal('task'); }
+});
+
+document.getElementById('habitConfirm').addEventListener('click', () => {
+  const v = document.getElementById('habitInput').value.trim();
+  if (v) { addHabit(v); closeModal('habit'); }
+});
+
+document.getElementById('taskInput').addEventListener('keydown', e => {
+  if (e.key === 'Enter') { document.getElementById('taskConfirm').click(); }
+});
+
+document.getElementById('habitInput').addEventListener('keydown', e => {
+  if (e.key === 'Enter') { document.getElementById('habitConfirm').click(); }
+});
+
+document.getElementById('timerToggle').addEventListener('click', () => {
+  if (timerState.running) pauseTimer(); else startTimer();
+});
+
+document.getElementById('timerReset').addEventListener('click', resetTimer);
+
+document.querySelectorAll('.timer-preset').forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (timerState.running) return;
+    document.querySelectorAll('.timer-preset').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const mins = parseInt(btn.dataset.minutes);
+    timerState.total = mins * 60;
+    timerState.seconds = mins * 60;
+    timerState.breakSeconds = mins === 50 ? 10 * 60 : 5 * 60;
+    updateTimerDisplay();
+  });
+});
+
+document.getElementById('resetDay').addEventListener('click', () => {
+  if (confirm('Reset all of today\'s data? This cannot be undone.')) {
+    const today = TODAY();
+    data.tasks[today] = [];
+    data.timer[today] = { sessions: 0, minutes: 0 };
+    data.habits.forEach(h => { delete h.history[today]; });
+    save(data);
+    renderAll();
+  }
+});
+
+// Close modals on overlay tap
+document.querySelectorAll('.modal-overlay').forEach(overlay => {
+  overlay.addEventListener('click', e => {
+    if (e.target === overlay) {
+      overlay.classList.remove('show');
+    }
+  });
+});
+
+// ─── INIT ───
+function renderAll() {
+  renderDate(); renderQuote(); renderTasks(); renderHabits(); renderTimer(); renderScore(); renderReview();
+  updateTimerDisplay();
+}
+
+renderAll();
+
+// Check for new day every minute
+setInterval(() => { checkNewDay(); renderDate(); }, 60000);
+</script>
+</body>
+</html>
